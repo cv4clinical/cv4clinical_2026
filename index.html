@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CVAMD 2025: 3rd Workshop on Computer Vision for Automated Medical Diagnosis</title>
+  <title>CV4Clinic 2026: Computer Vision for Real-world Clinical Translation</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -44,6 +44,25 @@
     .supporting-card {
             text-align: center;
         }
+    
+    /* Resize all speaker and organizer profile images to 480x480 */
+    #speakers .speaker img,
+    #organizers .speaker img {
+            width: 480px;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    
+    /* Increase container width globally to reduce side margins */
+    .container {
+            max-width: 1700px;
+        }
+    
+    /* Keep speakers section with default width */
+    #speakers .container {
+            max-width: 1340px;
+        }
 
   </style>
 
@@ -73,7 +92,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#cfp">Call for Papers</a></li>
-          <li><a class="nav-link scrollto" href="#resources">Resources</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#resources">Resources</a></li> -->
           <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
           <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
@@ -108,13 +127,13 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 class="mb-4 pb-0">Computer Vision for Automated Medical Diagnosis <br>(CVAMD @ ICCV 2025)</h1>
-      <p class="mb-2 pb-0" style="font-size:1.5rem;">Oct.19, Honolulu, Hawai'i</p>
-      <p class="mb-4 pb-0" style="font-size:1.5rem;"><strong>Location:</strong> Hawai'i Convention Center 314</p>
-      <p class="mb-4 pb-0" style="font-size:1.2rem;">
+      <h1 class="mb-4 pb-0">Bridging AI and Medical Reality: Computer Vision for Real-world Clinical Translation <br>(CV4Clinic @ CVPR 2026)</h1>
+      <p class="mb-2 pb-0" style="font-size:1.9rem;">Date: TBD</p>
+      <p class="mb-4 pb-0" style="font-size:1.9rem;"><strong>Location:</strong> Denver, Colorado</p>
+      <!-- <p class="mb-4 pb-0" style="font-size:1.2rem;">
         <strong>Online Proceedings:</strong>
-        <a href="https://openaccess.thecvf.com/ICCV2025_workshops/CVAMD" target="_blank">https://openaccess.thecvf.com/ICCV2025_workshops/CVAMD</a>
-      </p>
+        <a href="#" target="_blank">TBD</a>
+      </p> -->
       <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
       <a href="#about" class="about-btn scrollto">About The Event</a> -->
     </div>
@@ -128,7 +147,7 @@
         <div class="row">
           <div class="col-lg-12">
             <h2>About The Workshop</h2>
-            <p style="font-size: 16px;">The striding advances of computer vision techniques are revolutionizing many long-standing automatic medical diagnosis tasks. Emerging trends—such as Large Language Models (LLMs), Foundation Models (FMs), advanced learning paradigms (e.g., un-/semi-/self-supervised learning), and considerations of fairness and generalization—remain underexplored for secure and reliable automated medical diagnosis. Distinctly, this workshop emphasizes integrating insights from clinicians and radiologists alongside technical discussions to better advance the field. </p>
+            <p style="font-size: 16px;">The CV4Clinic 2026 workshop aims to bridge advanced computer vision techniques and the complex realities of clinical practice. While CVPR continues to drive progress in imaging, perception, and reasoning, this workshop explores how such advances can translate into real-world medical impacts. By convening experts from academia, industry, and healthcare, CV4Clinic 2026 will focus on key issues of model effectiveness, reliability, and reproducibility in clinical deployment; critically examine the opportunities and challenges of emerging paradigms such as foundation and generative models; and explore future directions for socially meaningful and clinically grounded medical AI.</p>
           </div>
           <!-- <div class="col-lg-3">
             <h3>Where</h3>
@@ -142,54 +161,38 @@
       </div>
     </section><!-- End About Section -->
     <!-- ======= Resources Section ======= -->
-    <section id="resources" class="section-with-bg">
+    <!-- <section id="resources" class="section-with-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Resources</h2>
-          <p>Useful links and materials for CVAMD 2025 participants</p>
+          <p>Useful links and materials for CV4Clinic 2026 participants</p>
         </div>
         <ul class="list-group list-group-flush resources-list" style="font-size:1.08em;">
           <li class="list-group-item">
             <strong>Workshop Proceedings:</strong>
-            <a href="https://openaccess.thecvf.com/ICCV2025_workshops/CVAMD" target="_blank">View Online</a>
+            <a href="#" target="_blank">TBD</a>
           </li>
 
           <li class="list-group-item">
             <strong>Oral Slides:</strong>
-            <a href="https://drive.google.com/drive/folders/1iEU0uWPewU0QybhBV6Fwf2IfzqUsSxwAH-3smukrpl-S1SORLLkxE21H_HsQvhnDBlrzpdDQ?usp=sharing" target="_blank">Access Here</a>
+            <a href="#" target="_blank">TBD</a>
           </li>
 
           <li class="list-group-item">
             <strong>Posters:</strong>
-            <a href="https://drive.google.com/drive/folders/1ZRfguK6vDRfGk85SCmCaF61j1AePUFm71yagYkEVbHcNehwxr9AepxY_XmxZdbeYk5WtzoSP?usp=sharing" target="_blank">Access Here</a>
+            <a href="#" target="_blank">TBD</a>
           </li>
 
           <li class="list-group-item">
             <strong>Best Paper Award (Long Paper Track):</strong>
-            <a href="https://arxiv.org/abs/2508.02951" target="_blank">MedBLINK: Probing Basic Perception in Multimodal Language Models for Medicine</a>
+            TBD
           </li>
           <li class="list-group-item">
             <strong>Best Student Paper Award (Long Paper Track):</strong>
-            <a href="https://www.arxiv.org/abs/2508.13363" target="_blank">Automated Assessment of Aesthetic Outcomes in Facial Plastic Surgery</a>
-          </li>
-          <!-- <li class="list-group-item">
-            <strong>Best Paper Award (Extended Abstract Track):</strong>
-            <a href="" target="_blank">Coming Soon</a>
-          </li>
-          <li class="list-group-item">
-            <strong>Best Student Paper Award (Extended Abstract Track):</strong>
-            <a href="" target="_blank">Coming Soon</a>
-          </li> -->
-          <li class="list-group-item">
-            <strong>Best Paper Award (Highlight Track):</strong>
-            <a href="https://www.nature.com/articles/s41591-025-03916-z" target="_blank">A Deep Learning System for Rapid and Accurate Warning of Acute Aortic Syndrome on Non-contrast CT in China</a>
-          </li>
-          <li class="list-group-item">
-            <strong>Best Student Paper Award (Highlight Track):</strong>
-            <a href="https://arxiv.org/abs/2410.08397" target="_blank">VoxelPrompt: A Vision Agent for End-to-End Medical Image Analysis</a>
+            TBD
           </li>
           <br>
-          🙌 Thank you to all our speakers and attendees for making CVAMD 2025 a success! 🎉
+          🚀 Stay tuned for updates on CV4Clinic 2026! 🎉
         </ul>
       </div>
       <style>
@@ -209,7 +212,7 @@
           margin-bottom: 0;
         }
       </style>
-    </section>
+    </section> -->
 
     <!-- ======= Call for Papers Section ======= -->
     <section id="cfp" class="section-with-bg">
@@ -218,95 +221,61 @@
           <h2>Call for Papers</h2>
         </div>
         <p>
-          We welcome three types of submissions for oral or poster presentation at the workshop:
+          We welcome submissions of <strong>long papers (4-8 pages, excluding references)</strong> for oral or poster presentation at the workshop. Accepted papers will be published in the <strong>CVPR 2026 Workshop Proceedings</strong>.
         </p>
-        <ul style="margin-left: 1em;">
-          <li><strong>📄 Long Papers</strong> – Up to <strong>8 pages</strong> (excluding references). Accepted long papers will be published in the <strong>ICCV 2025 Workshop Proceedings</strong>.</li>
-          <li><strong>📝 Extended Abstracts</strong> – Up to <strong>4 pages</strong> (excluding references), non-archived. Great for sharing work-in-progress or previously published work.</li>
-          <li><strong>🌟 Highlights </strong> – A concise <strong>1-page summary</strong>, non-archived. Perfect for showcasing recently accepted or notable papers and <strong>boosting visibility and engagement</strong>.</li>
-        </ul>
-        <h3>🧠 Topics of Interest</h3>
+        <h3>🎯 Topics of Interest</h3>
+        <p>CV4Clinic 2026 focuses on bridging computer vision with real-world clinical translation. The workshop welcomes contributions in, but not limited to, the following areas:</p>
+        <!-- <ul class="fa-ul" style="line-height: 1.8; font-size: 1.05em;">
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🏥 Clinical deployment and translation:</strong> Model effectiveness, reliability, and reproducibility in real-world settings</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🔥 Foundation and generative models:</strong> Opportunities and challenges for medical imaging</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🤖 AI agents:</strong> Autonomous systems for clinical decision-making and workflow automation</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🧾 Interpretable and trustworthy AI:</strong> Explainability, fairness, and clinical validation</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>📊 Clinical outcome prediction:</strong> Risk assessment, prognosis, and treatment planning</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🔍 Multimodal medical imaging:</strong> Integration of diverse imaging modalities and clinical data</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>⚖️ Robustness and generalization:</strong> Domain adaptation, out-of-distribution detection</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🩺 Medical image analysis:</strong> Segmentation, detection, classification, registration (MRI/CT/PET/Pathology)</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>📝 Report generation:</strong> Automated diagnostic reporting from medical images</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🧬 Computational pathology:</strong> Digital pathology, histopathology analysis</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🧠 Self-supervised and contrastive learning:</strong> Learning from limited annotations</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🎓 Human-AI collaboration:</strong> Interactive annotation, decision support systems</li>
+        </ul> -->
         <ul class="fa-ul" style="line-height: 1.8; font-size: 1.05em;">
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🔥 Foundation Models (FMs) and Large Language Models (LLMs)</strong> in healthcare</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🤖 AI Agents</strong> for medical decision-making and workflow automation</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🧾 Interpretable & trustworthy AI</strong> for medical diagnosis</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>📊 Predicting <strong>clinical outcomes</strong> from medical image analysis</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>🔍 <strong>Multimodal</strong> biomedical image analysis</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>⚖️ <strong>Fairness, robustness, and generalization</strong> in medical computer vision</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>🧠 Embedding <strong>medical knowledge</strong> in vision systems</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🧾 Generating diagnostic reports</strong> from medical images</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🧭 Clinical reasoning</strong>-aware vision system design</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>🧹 Learning robust representations from <strong>noisy annotations</strong></li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>🩺 Advances in disease diagnosis and management with computer vision</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>🧬 Medical anomaly and out-of-distribution prediction</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>🖼️ Medical image registration and classification (MRI/CT/PET)</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>📌 Organ and lesion segmentation/detection</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>📈 Longitudinal studies with computer vision</li>
-          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span>♾️ Life-long and active learning in medical vision</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🎯 Lesion and Tumor Understanding:</strong> Robust segmentation under heterogeneous conditions, multi-rater variability modeling, adaptive delineation</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>⏱️ Temporal and Longitudinal Analysis:</strong> Disease progression modeling, temporal imaging data learning, short- to long-term outcome analysis</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🤝 Human-AI Collaboration:</strong> Interactive and trustworthy systems, human-in-the-loop learning, explainability, interfaces, clinical workflow integration</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>📊 Evaluation, Benchmarking, and Deployment:</strong> Clinical evaluation protocols, domain adaptation, robustness, deployment case studies, regulatory readiness</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🔥 Generative and Multimodal Modeling:</strong> Data synthesis, modality translation, multimodal clinical data, cross-modal alignments, digital twins and personalization</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>💬 Vision and Language in Medicine:</strong> Medical reports in clinical flows, LLM-based medical applications, hallucination and clinical interpretability</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🧠 Foundation Models in Medicine:</strong> SAM/DINO-based applications, world model state transfer, continual learning and active learning</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🧊 Medical 3D Learning:</strong> 3D reconstruction and representation, real-time motion estimation and tumor tracking, population-level statistical shape modelling</li>
         </ul>
+        <p style="font-style: italic;">
+          By combining these themes, CV4Clinic 2026 aims to foster interdisciplinary dialogue and identify research directions that will shape the future of clinically reliable, socially meaningful, and ethically grounded medical AI.
+        </p>
         <p>
           🏆 <strong>Review & Selection:</strong> All submissions will be evaluated by the program committee based on relevance and quality. <strong>Oral and poster</strong> presentations will be selected accordingly.
         </p>
+        
         <p>
-          📚 <strong>Note:</strong> Accepted <strong>long papers</strong> will be published alongside the <strong>ICCV 2025 proceedings</strong>.
-        </p>
-        <h2>📢 Submission Guidelines</h2>
-        <ul style="line-height: 1.6; font-size: 1.05em;">
-          <li>
-            <strong>📘 Long Paper Track (4-8 pages, with Proceedings)</strong><br>
-            <p>
-              Submit your <strong>original research</strong> (4–8 pages, excluding references) in the <a href="https://media.eventhosts.cc/Conferences/ICCV2025/ICCV2025-Author-Kit-Feb.zip" target="_blank"><strong>ICCV 2025 format</strong></a>. Accepted papers will be published in the official ICCV workshop proceedings.
-              <br>
-              Please ensure your submission adheres to the <a href="https://iccv.thecvf.com/Conferences/2025/AuthorGuidelines#SubmissionPolicies" target="_blank"><strong>ICCV 2025 Dual Submission Policy</strong></a>. Work must be sufficiently original and <strong>not</strong> under review elsewhere.
-            </p>
-          </li>
-          <li>
-            <strong>📝 Extended Abstracts (2–4 pages, non-archived)</strong><br>
-            <p>
-              Ideal for <strong>work-in-progress</strong> or previously published studies relevant to the workshop. Submissions must be <strong>2–4 pages (excluding references)</strong>. 
-              <br>
-              These abstracts <strong>will not be included</strong> in the official proceedings, making them suitable for showcasing ongoing work or gaining community feedback.
-              Please verify the double submission policy of your target venue if you plan to submit elsewhere later.
-            </p>
-          </li>
-          <li>
-            <strong>🌟 Highlights Track (1-page summary + external link)</strong><br>
-            <p>
-              Showcase your <strong>recently accepted or notable work</strong> (e.g., from NeurIPS, ICLR, CVPR). Simply provide a concise <strong>1-page summary</strong> with a link to the full paper.
-              <br>
-              This track is lightly curated—no full review process—and is a great opportunity to <strong>increase visibility and spark discussion</strong>.
-            </p>
-          </li>
-        </ul>
-        <p>
-          All papers can be submitted through <a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/CVAMD" target="_blank">OpenReview</a>.
+          All papers can be submitted through TBD.
         </p>
         <h2>🏆 Awards</h2>
         <ul style="margin-left: 1em; font-size: 1.05em; line-height: 1.8;">
-          <li><strong>🥇 Best Paper Award</strong> – One winner per track</li>
-          <li><strong>🎓 Best Student Paper Award</strong> – Recognizing exceptional work led by a student author, one per track</li>
-          <li><strong>🖼️ Best Poster Award</strong> – Honoring the most impactful poster presentation in each track</li>
+          <li><strong>🥇 Best Paper Award</strong></li>
+          <li><strong>🎓 Best Student Paper Award</strong></li>
+          <li><strong>🖼️ Best Poster Award</strong></li>
         </ul>
-        <p style="font-size: 1.05em; line-height: 1.6;">
-          In addition, each track will feature a selection of <strong>oral</strong> and <strong>poster</strong> presentations. 
-          The number of slots for each format will be finalized and announced following the review process.
-        </p>
         <h2>📅 Important Dates</h2>
         <ul class="fa-ul" style="line-height: 1.8; font-size: 1.05em;">
-          <li><span class="fa-li"><i class="fa fa-calendar-check text-success"></i></span><strong>Submission Opens:</strong> <b>May 1</b></li>
-          <li>
-            <span class="fa-li"><i class="fa fa-calendar-times text-danger"></i></span>
-            <strong>Submission Deadline:</strong> <del><b>June 21 23:59 PM</b></del> → <b style="color: #e74c3c;">June 30 23:59 PM</b>
-          </li>
-          <li><span class="fa-li"><i class="fa fa-envelope-open-text text-info"></i></span><strong>Notification of Acceptance:</strong> <b>July 10 23:59 PM</b></li>
-          <li><span class="fa-li"><i class="fa fa-upload text-primary"></i></span><strong>Camera-Ready Deadline:</strong> <b>August 16 23:59 PM</b></li>
+          <li><span class="fa-li"><i class="fa fa-calendar-check text-success"></i></span><strong>Submission Opens:</strong> <b>February 21, 2026</b></li>
+          <li><span class="fa-li"><i class="fa fa-calendar-times text-danger"></i></span><strong>Submission Deadline:</strong> <b style="color: #e74c3c;">March 17, 2026</b></li>
+          <li><span class="fa-li"><i class="fa fa-envelope-open-text text-info"></i></span><strong>Notification of Acceptance:</strong> <b>April 05, 2026</b></li>
+          <li><span class="fa-li"><i class="fa fa-upload text-primary"></i></span><strong>Camera-Ready Deadline:</strong> <b>April 18, 2026</b></li>
         </ul>
         <p><em>🕓 All times are in <strong>Anywhere on Earth (AoE)</strong>.</em></p>
         <h2>📄 Format</h2>
         <p>
-          Please use the official 
-          <a href="https://media.eventhosts.cc/Conferences/ICCV2025/ICCV2025-Author-Kit-Feb.zip" target="_blank"><strong>ICCV 2025 Submission Template</strong></a> 
-          to prepare your manuscript.
+          Please use the official <strong><a href="https://github.com/cvpr-org/author-kit/archive/refs/tags/CVPR2026-v1(latex).zip" target="_blank">CVPR 2026 Submission Template</a></strong> to prepare your manuscript.
         </p>
         <p>
           Submissions must be in <strong>PDF format</strong> and <strong>anonymous</strong>. By submitting a paper, at least one author agrees to present the work if accepted.
@@ -314,7 +283,7 @@
         <h2>🧑‍⚖️ Reviewer Recruitment</h2>
         <p>
           We’re actively seeking reviewers to support the community. If you're interested, please sign up via 
-          <a href="https://forms.gle/UMFgvDat9eEw5FFW7" target="_blank"><strong>this form</strong></a>.
+          TBD.
         </p>
       </div>
     </section>
@@ -325,132 +294,77 @@
         <div class="section-header">
           <h2>Invited Speakers</h2>
         </div>
-        <!-- Row 1 -->
+        
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <!-- First Row - 3 Speakers -->
+          <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/2.png" alt="Speaker 2" class="img-fluid">
+              <img src="assets/img/speakers/bernhardkainz.png" alt="Prof. Bernhard Kainz" class="img-fluid">
               <div class="details">
-                <h3><a href="https://shengliu66.github.io" target="_blank">Sheng Liu</a></h3>
-                <p>Stanford University</p>
+                <h3><a href="https://bernhard-kainz.com/" target="_blank">Prof. Bernhard Kainz</a></h3>
+                <p>FAU Erlangen Nürnberg and Imperial College London</p>
                 <div class="social">
-                  <a href="https://shengliu66.github.io" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.es/citations?user=rzhzR-cAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
+                  <a href="https://bernhard-kainz.com/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.co.uk/citations?user=Igxq-YEAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/1.png" alt="Speaker 1" class="img-fluid">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/PCYuen.png" alt="Prof. P. C. Yuen" class="img-fluid">
               <div class="details">
-                <h3><a href="https://profiles.stanford.edu/akshay-chaudhari/" target="_blank">Akshay Chaudhari</a></h3>
-                <p>Stanford</p>
+                <h3><a href="https://www.comp.hkbu.edu.hk/~pcyuen/" target="_blank">Prof. P. C. Yuen</a></h3>
+                <p>Hong Kong Baptist University</p>
                 <div class="social">
-                  <a href="https://profiles.stanford.edu/akshay-chaudhari/" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.com/citations?user=08Y4NhMAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
+                  <a href="https://www.comp.hkbu.edu.hk/~pcyuen/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=CwhIcHkAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/3.png" alt="Speaker 3" class="img-fluid">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/speakers/lvle.png" alt="Dr. Le Lv" class="img-fluid">
               <div class="details">
-                <h3><a href="https://faisal.ai/" target="_blank">Faisal Mahmood</a></h3>
-                <p>Harvard</p>
+                <h3><a href="https://lelu007.github.io/" target="_blank">Dr. Le Lv</a></h3>
+                <p>Ant Group</p>
                 <div class="social">
-                  <a href="https://faisal.ai/" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.com.sg/citations?user=9MsdbKoAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
-                  <a href="https://x.com/AI4Pathology" target="_blank"><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/faisalmmd/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://lelu007.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=kZn0f6gAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Row 2 -->
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
+
+        <!-- Second Row - 2 Speakers -->
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/10.png" alt="Speaker 10" class="img-fluid">
+              <img src="assets/img/speakers/siqiliu.jfif" alt="Dr. Siqi Liu" class="img-fluid">
               <div class="details">
-                <h3><a href="https://med.stanford.edu/profiles/lei-xing">Lei Xing</a></h3>
-                <p>Stanford</p>
+                <h3><a href="https://www.linkedin.com/in/siqi-liu-6223b455/" target="_blank">Dr. Siqi Liu</a></h3>
+                <p>Paige AI</p>
                 <div class="social">
-                  <a href="https://med.stanford.edu/profiles/lei-xing" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.com/citations?user=5QAqBv8AAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
+                  <a href="https://www.linkedin.com/in/siqi-liu-6223b455/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=ADyo_cAAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/9.png" alt="Speaker 9" class="img-fluid">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/youzhang.jpg" alt="Dr. You Zhang" class="img-fluid">
               <div class="details">
-                <h3><a href="https://www.zongweiz.com/">Zongwei Zhou</a></h3>
-                <p>JHU</p>
+                <h3><a href="https://sites.google.com/site/youzhangchn" target="_blank">Dr. You Zhang</a></h3>
+                <p>UT Southwestern Medical Center</p>
                 <div class="social">
-                  <a href="https://www.zongweiz.com/" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.com/citations?user=JVOeczAAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
-                  <a href="https://x.com/Zongwei_Zhou" target="_blank"><i class="bi bi-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/4.png" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://daguangxu.net/" target="_blank">Daguang Xu</a></h3>
-                <p>NVIDIA</p>
-                <div class="social">
-                  <a href="https://daguangxu.net/" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.com/citations?user=r_VHYHAAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
-                  <a href="https://www.linkedin.com/in/daguang-xu-2b307863/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Row 3 -->
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/6.png" alt="Speaker 7" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://ai.stanford.edu/~syyeung/">Serena Yeung</a></h3>
-                <p>Stanford</p>
-                <div class="social">
-                  <a href="https://ai.stanford.edu/~syyeung/" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.com/citations?user=Tw2m5kUAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/7.png" alt="Speaker 7" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://www.adamyala.org/">Adam Yala</a></h3>
-                <p>UC Berkeley</p>
-                <div class="social">
-                  <a href="https://www.adamyala.org/" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.com/citations?user=a4unsk4AAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/8.png" alt="Speaker 8" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://www.james-zou.com/">James Zou</a></h3>
-                <p>Stanford</p>
-                <div class="social">
-                  <a href="https://www.james-zou.com/" target="_blank"><i class="bi bi-globe"></i></a>
-                  <a href="https://scholar.google.com/citations?user=23ZXZvEAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a>
-                  <a href="https://x.com/james_y_zou" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://sites.google.com/site/youzhangchn" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=VzdJe_4AAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
@@ -459,10 +373,6 @@
       </div>
     </section>
     <!-- End Speakers Section -->
-
-    </section> 
-
-    </section>
 
     <!-- ======= Venue Section ======= -->
     <!-- <section id="venue">
@@ -520,466 +430,155 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Event Schedule</h2>
+          <p>CV4Clinic 2026 Workshop Program</p>
         </div>
 
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-          <div role="tabpanel" class="col-lg-10 col-md-12 tab-pane fade show active" id="day-1"></div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>9:00 - 9:10</time></div>
-              <div class="col-md-10">
-                <h4>Welcome remarks and introduction</h4>
-              </div>
-            </div>
-
-            <!-- Speaker 1 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>9:10 - 9:35</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="speaker me-3">
-                    <img src="assets/img/speakers/2.png" alt="Sheng Liu" style="width:60px; border-radius:50%;">
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Invited Talk 1: <span style="font-weight:600;">Beyond Autopilot: Building the AI Copilot for Healthcare</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">Sheng Liu (Stanford)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract1" aria-expanded="false" aria-controls="abstract1">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract1">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    <!-- Generalist medical AI aims to build models that can perform a wide range of clinical tasks across diverse modalities and diseases. This talk will discuss the latest advances in foundation models for medical imaging, the integration of multimodal data, and the unique challenges in clinical deployment, including data scarcity, robustness, and interpretability. We will highlight opportunities for collaboration between clinicians and AI researchers to accelerate progress in this field. -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Oral Session 1 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>9:35 - 9:50</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <h4 class="mb-0 me-3">Oral Session 1</h4>
-                  <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#oral1papers" aria-expanded="false" aria-controls="oral1papers">
-                    Presented Papers
-                  </button>
-                </div>
-                <div class="collapse mt-2" id="oral1papers">
-                  <div class="card card-body" style="background:#f8f9fa; padding-left: 1.2rem; max-width: 600px; margin-left: 0;">
-                    <ul class="list-group list-group-flush" style="margin-bottom:0; padding-left: 0.5rem;">
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[7] UD-Mamba: A pixel-level uncertainty-driven Mamba model for medical image segmentation</strong><br>
-                        <small>Weiren Zhao, Feng Wang, Yanran Wang, Yutong Xie, Qi Wu, Yuyin Zhou</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[20] Advancing Prognosis Prediction Using Spatial Omics-Enriched Histopathology</strong><br>
-                        <small>Tianyi Wang, Ruibang Luo, Zhenqin Wu</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[21] PMC-Vid: A Large-Scale Biomedical Video Captioning Dataset</strong><br>
-                        <small>Yosuke Yamagishi, Kuniaki Saito, Atsushi Hashimoto, Yoshitaka Ushiku</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Poster Session I -->
+          <div role="tabpanel" class="col-lg-10 col-md-12 tab-pane fade show active" id="day-1">
+            
+            <!-- Welcome and Introduction -->
             <div class="row schedule-item">
               <div class="col-md-2">
-                <time>9:50 - 10:50</time>
+                <time>8:30 - 8:35</time>
               </div>
               <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2 flex-wrap">
-                  <h4 class="mb-0 me-3" style="font-size:clamp(1rem,1.6vw,1.2rem); color:#22313f; font-weight:700; letter-spacing:0.2px;">
-                    Posters session I and coffee break
-                  </h4>
-                  <div class="me-3" style="font-size:clamp(0.82rem,1.1vw,0.95rem); color:#6c757d;">
-                    Location: <strong style="color:#495057;">Exhall II; 211–246</strong>
-                  </div>
-                  <div class="badge" style="background:linear-gradient(135deg,#4e73df,#6f9ef4); color:#fff; font-size:0.9rem; font-weight:600; border-radius:0.5rem;">
-                    Presented Posters • Paper IDs ≤ 48
-                  </div>
-                </div>
+                <h4>Welcome and Introduction</h4>
+                <p>Opening by the organizers and introduction to the theme and objectives of CV4Clinic 2026</p>
               </div>
             </div>
 
-            <!-- Speaker 2 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:50 - 11:15</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="speaker me-3">
-                    <img src="assets/img/speakers/1.png" alt="Akshay Chaudhari" style="width:60px; border-radius:50%;">
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Invited Talk 2: <span style="font-weight:600;">Pathways for Radiology Foundation Models To Enter the Clinic</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">Akshay Chaudhari (Stanford)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract2" aria-expanded="false" aria-controls="abstract2">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract2">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    <!-- Magnetic Resonance Imaging (MRI) is a powerful diagnostic tool but is often limited by long scan times. This talk will cover recent advances in AI-driven MRI acceleration, including deep learning-based reconstruction, quality assurance, and workflow integration. We will discuss the translational journey from algorithm development to deployment in clinical settings, highlighting lessons learned and future directions. -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Speaker 3 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:15 - 11:40</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="speaker me-3">
-                    <img src="assets/img/speakers/3.png" alt="Faisal Mahmood" style="width:60px; border-radius:50%;">
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Invited Talk 3: <span style="font-weight:600;">Multimodal, Generative and Agentic AI for Pathology</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">Faisal Mahmood (Harvard)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract3" aria-expanded="false" aria-controls="abstract3">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract3">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    <!-- Computational pathology leverages AI to analyze digitized histopathology slides for disease diagnosis and prognosis. This talk will present recent progress in large-scale learning for pathology, including self-supervised and multimodal approaches, and discuss their clinical implications. We will also address challenges in data annotation, generalization, and regulatory approval. -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Speaker 4 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:40 - 12:05</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="speaker me-3">
-                    <img src="assets/img/speakers/10.png" alt="Lei Xing" style="width:60px; border-radius:50%;">
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Invited Talk 4: <span style="font-weight:600;">Foundations and Applications of AI Foundation Models</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">Lei Xing (Stanford)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract4" aria-expanded="false" aria-controls="abstract4">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract4">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    <!-- AI is transforming radiation oncology by enabling automated treatment planning, outcome prediction, and adaptive therapy. This talk will review the current landscape of AI applications in radiation oncology, discuss technical and clinical challenges, and outline future research directions for integrating AI into routine clinical practice. -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:05 - 13:05</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <h4 class="mb-0 me-3">Lunch break</h4>
-                </div>
-              </div>
-            </div>
-
-            <!-- Oral Session 2 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>13:05 - 13:25</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <h4 class="mb-0 me-3">Oral Session 2</h4>
-                  <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#oral2papers" aria-expanded="false" aria-controls="oral2papers">
-                    Presented Papers
-                  </button>
-                </div>
-                <div class="collapse mt-2" id="oral2papers">
-                  <div class="card card-body" style="background:#f8f9fa; padding-left: 1.2rem; max-width: 600px; margin-left: 0;">
-                    <ul class="list-group list-group-flush" style="margin-bottom:0; padding-left: 0.5rem;">
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[32] MK-UNet: Multi-kernel Lightweight CNN for Medical Image Segmentation</strong><br>
-                        <small>Md Mostafijur Rahman, Radu Marculescu</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[35] A Deep Learning System for Rapid and Accurate Warning of Acute Aortic Syndrome on Non-contrast CT in China</strong><br>
-                        <small>Yan-Jie Zhou, Yujian Hu, Zhengyao Ding, Le Lu, Minfeng Xu, Hongkun Zhang</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[37] VoxelPrompt: A Vision-Language Agent for Grounded Medical Image Analysis</strong><br>
-                        <small>Andrew Hoopes, Victor Ion Butoi, John Guttag, Adrian V Dalca</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[39] Comparison of Digital Histology AI Models with Low-Dimensional Genomic and Clinical Models in Survival Modeling for Prostate Cancer</strong><br>
-                        <small>Aidan McLoughlin, Ho Yin HO, Xin Zhao, Alexander Karl Hakanasson, Alireza Moradi, Qi Joslove Xu, Yang Liu</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Speaker 5 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>13:25 - 13:50</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="speaker me-3">
-                    <img src="assets/img/speakers/9.png" alt="Zongwei Zhou" style="width:60px; border-radius:50%;">
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Invited Talk 5: <span style="font-weight:600;">Early Cancer Detection by Computed Tomography and Artificial Intelligence</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">Zongwei Zhou (JHU)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract5" aria-expanded="false" aria-controls="abstract5">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract5">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    <!-- Self-supervised learning has emerged as a powerful paradigm for leveraging large-scale unlabeled medical images. This talk will cover recent advances in self-supervised representation learning, its impact on downstream tasks, and practical considerations for deploying these methods in real-world clinical workflows. -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Speaker 6 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>13:50 - 14:15</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="speaker me-3">
-                    <img src="assets/img/speakers/4.png" alt="Daguang Xu" style="width:60px; border-radius:50%;">
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Invited Talk 6: <span style="font-weight:600;">Enabling Medical VLMs to Think Like Doctors: Integrating Domain Models and Clinical Reasoning</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">Daguang Xu (NVIDIA)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract6" aria-expanded="false" aria-controls="abstract6">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract6">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    Recent advances in vision-language models (VLMs) have shown great promise for automated medical diagnosis, yet their reasoning capabilities and reliability remain limited compared to human experts. In this talk, I will present strategies to improve the performance and interpretability of medical VLMs by integrating domain-specific knowledge and doctor-like reasoning. First, we demonstrate that medical VLMs can achieve higher accuracy by leveraging existing healthcare models—such as classification, segmentation, and detection networks—during the learning process. Second, we introduce a two-step training paradigm to align VLM reasoning with clinical practice: (1) supervised fine-tuning with chain-of-thought (CoT) annotations from physicians, and (2) reinforcement learning with Q&A datasets using answer-only supervision. To reduce annotation costs, we generate pseudo-CoT from radiology reports using large language models, enabling scalable training. Our final system not only achieves improved diagnostic accuracy but also provides interpretable, step-by-step reasoning that mimics the decision-making process of human doctors. This work highlights a pathway towards safer, more trustworthy AI systems in medical imaging and healthcare applications.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Speaker 7 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>14:15 - 14:40</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="speaker me-3">
-                    <img src="assets/img/speakers/6.png" alt="Serena Yeung" style="width:60px; border-radius:50%;">
-                  </div>
-                  <div>
-                    <h4 class="mb-1">Invited Talk 7: <span style="font-weight:600;">Multimodal Generative Models for Science</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">Serena Yeung (Stanford)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract7" aria-expanded="false" aria-controls="abstract7">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract7">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    <!-- Human-centered AI focuses on designing systems that augment clinicians and improve patient outcomes. This talk will discuss approaches for building interpretable, trustworthy, and collaborative AI systems for healthcare, with examples from computer vision and multimodal learning. -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Oral Session 3 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>14:40 - 14:55</time></div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2">
-                  <h4 class="mb-0 me-3">Oral Session 3</h4>
-                  <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#oral3papers" aria-expanded="false" aria-controls="oral3papers">
-                    Presented Papers
-                  </button>
-                </div>
-                <div class="collapse mt-2" id="oral3papers">
-                  <div class="card card-body" style="background:#f8f9fa; padding-left: 1.2rem; max-width: 600px; margin-left: 0;">
-                    <ul class="list-group list-group-flush" style="margin-bottom:0; padding-left: 0.5rem;">
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[44] Latent Gene Diffusion for Spatial Transcriptomics Completion</strong><br>
-                        <small>Paula Cárdenas, Leonardo Manrique, Daniela Vega, Daniela Ruiz, Pablo Arbelaez</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[49] Towards Robust Multimodal Representation: A Unified Approach with Adaptive Experts and Alignment</strong><br>
-                        <small>Nazanin Moradinasab, Saurav Sengupta, Jiebei Liu, Sana Syed, Donald E. Brown</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[72] A Dynamic Agent Framework for Large Language Model Reasoning for Medical and Visual Question Answering</strong><br>
-                        <small>Ziyan Xiao, Ruiyang Zhang, Yushi Feng, Lingting Zhu, Liang Peng, Lequan Yu</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Poster Session II -->
-            <!-- <div class="row schedule-item">
-              <div class="col-md-2 d-flex align-items-center">
-                <div class="w-100 text-md-end">
-                  <time class="d-block h6 mb-0 text-primary fw-bold" style="font-size:1rem;">14:55 — 15:55</time>
-                  <small class="text-muted">Poster Session II & Coffee Break</small>
-                </div>
-              </div> -->
-  
+            <!-- Keynote-Academia-1 -->
             <div class="row schedule-item">
               <div class="col-md-2">
-                <time>14:55 - 15:55</time>
+                <time>8:35 - 9:00</time>
               </div>
-              <div class="col-md-10">
-                <div class="d-flex align-items-center mb-2 flex-wrap">
-                  <h4 class="mb-0 me-3" style="font-size:clamp(1rem,1.6vw,1.2rem); color:#22313f; font-weight:700; letter-spacing:0.2px;">
-                    Posters session II and coffee break
-                  </h4>
-                  <div class="me-3" style="font-size:clamp(0.82rem,1.1vw,0.95rem); color:#6c757d;">
-                    Location: <strong style="color:#495057;">Exhall II; 211–246</strong>
-                  </div>
-                  <div class="badge" style="background:linear-gradient(135deg,#4e73df,#6f9ef4); color:#fff; font-size:0.9rem; font-weight:600; border-radius:0.5rem;">
-                    Presented Posters • Paper IDs > 48
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Speaker 8 -->
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>15:55 - 16:20</time></div>
               <div class="col-md-10">
                 <div class="d-flex align-items-center mb-2">
                   <div class="speaker me-3">
-                    <img src="assets/img/speakers/7.png" alt="Adam Yala" style="width:60px; border-radius:50%;">
+                    <img src="assets/img/speakers/bernhardkainz.png" alt="Prof. Bernhard Kainz" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
                   </div>
                   <div>
-                    <h4 class="mb-1">Invited Talk 8: <span style="font-weight:600;">AI for Personalized Cancer Care</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">Adam Yala (UC Berkeley)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract8" aria-expanded="false" aria-controls="abstract8">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract8">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    Early detection significantly improves outcomes across many cancers, motivating major investments in population-wide screening programs, such as low-dose CT for lung cancer. To make screening more effective, we must simultaneously improve early detection for patients who will develop cancer while minimizing the harms of over screening. Advancing this Pareto frontier requires progress across three fronts: (1) accurately predicting patient outcomes from all available data, (2) designing intervention strategies tailored to risk, and (3) evaluating and translating these strategies into clinical practice. In this talk, I will present ongoing work across all three areas, driven by the goal of using every available bit of patient data to personalize care.
+                    <h4 class="mb-1">Keynote-Academia-1</h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Prof. Bernhard Kainz</h5>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Speaker 9 -->
+            <!-- Keynote-Industry-1 -->
             <div class="row schedule-item">
-              <div class="col-md-2"><time>16:20 - 16:45</time></div>
+              <div class="col-md-2">
+                <time>9:00 - 9:25</time>
+              </div>
               <div class="col-md-10">
                 <div class="d-flex align-items-center mb-2">
                   <div class="speaker me-3">
-                    <img src="assets/img/speakers/8.png" alt="James Zou" style="width:60px; border-radius:50%;">
+                    <img src="assets/img/speakers/lvle.png" alt="Dr. Le Lv" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
                   </div>
                   <div>
-                    <h4 class="mb-1">Invited Talk 9: <span style="font-weight:600;">Generative Multiagent Systems for Advancing Scientific Research</span></h4>
-                    <h5 class="mb-1" style="font-size:1.1em;">James Zou (Stanford)</h5>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract9" aria-expanded="false" aria-controls="abstract9">
-                      Abstract
-                    </button>
-                  </div>
-                </div>
-                <div class="collapse mt-2" id="abstract9">
-                  <div class="card card-body" style="background:#f8f9fa;">
-                    <strong>Abstract:</strong>
-                    <!-- Ensuring fairness and generalization is critical for deploying AI in healthcare. This talk will discuss sources of bias in medical data, methods for evaluating and improving fairness, and strategies for building robust models that generalize across populations and institutions. -->
+                    <h4 class="mb-1">Keynote-Industry-1</h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Dr. Le Lv</h5>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Oral Session 4 -->
+            <!-- Keynote-Healthcare-1 -->
             <div class="row schedule-item">
-              <div class="col-md-2"><time>16:45 - 17:05</time></div>
+              <div class="col-md-2">
+                <time>9:25 - 9:50</time>
+              </div>
               <div class="col-md-10">
                 <div class="d-flex align-items-center mb-2">
-                  <h4 class="mb-0 me-3">Oral Session 4</h4>
-                  <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#oral4papers" aria-expanded="false" aria-controls="oral4papers">
-                    Presented Papers
-                  </button>
-                </div>
-                <div class="collapse mt-2" id="oral4papers">
-                  <div class="card card-body" style="background:#f8f9fa; padding-left: 1.2rem; max-width: 600px; margin-left: 0;">
-                    <ul class="list-group list-group-flush" style="margin-bottom:0; padding-left: 0.5rem;">
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[73] Automated Assessment of Aesthetic Outcomes in Facial Plastic Surgery</strong><br>
-                        <small>Pegah Varghaei, Kiran Abraham-Aggarwal, Manoj T. Abraham, Arun Ross</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[80] MedBLINK:Probing Visual Perception and Trustworthiness in Multimodal Language Models for Medicine</strong><br>
-                        <small>Mahtab Bigverdi, Wisdom Oluchi Ikezogwo, Kevin Minghan Zhang, Hyewon Jeong, MingYu Lu, Sungjae Cho, Linda Shapiro, Ranjay Krishna</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[81] RadAgent: an agentic system for automatic radiotherapy treatment planning</strong><br>
-                        <small>Sheng Liu, Siqi Wang, James Zou, Lei Xing</small>
-                      </li>
-                      <li class="list-group-item" style="padding-left: 0.3rem;">
-                        <strong>[83] Memory-Guided Personalization for Physician-Specific Diagnostic Inference</strong><br>
-                        <small>Jong-hyuk Ahn, Seo-Yeon Choi, Kyungsu Lee</small>
-                      </li>
-                    </ul>
+                  <div class="speaker me-3">
+                    <img src="assets/img/speakers/youzhang.jpg" alt="Dr. You Zhang" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Keynote-Healthcare-1</h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Dr. You Zhang</h5>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Poster and Coffee Break -->
             <div class="row schedule-item">
-              <div class="col-md-2"><time>17:05 - 17:20</time></div>
+              <div class="col-md-2">
+                <time>9:50 - 10:20</time>
+              </div>
               <div class="col-md-10">
-                <h4>Award Ceremony and Closing Remarks</h4>
+                <h4>Poster and Coffee Break</h4>
+                <p>Presented Posters</p>
               </div>
             </div>
 
-          </div> <!-- end tab-pane #day-1 -->
-        </div> <!-- end tab-content -->
-      </div> <!-- end container -->
+            <!-- Keynote-Academia-2 -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>10:20 - 10:45</time>
+              </div>
+              <div class="col-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="speaker me-3">
+                    <img src="assets/img/speakers/PCYuen.png" alt="Prof. P C Yuen" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Keynote-Academia-2</h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Prof. P C Yuen</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Keynote-Industry-2 -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>10:45 - 11:10</time>
+              </div>
+              <div class="col-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="speaker me-3">
+                    <img src="assets/img/speakers/siqiliu.jfif" alt="Dr. Siqi Liu" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Keynote-Industry-2</h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Dr. Siqi Liu</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Oral Sessions -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>11:10 - 11:50</time>
+              </div>
+              <div class="col-md-10">
+                <h4>Oral Sessions</h4>
+                <p>Four selected oral presentations (10 minutes each)</p>
+              </div>
+            </div>
+
+            <!-- Summary and Outlook -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>11:50 - 12:00</time>
+              </div>
+              <div class="col-md-10">
+                <h4>Summary and Outlook</h4>
+                <p>Closing remarks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <style>
       #schedule .tab-content {
         max-width: 100%;
       }
-      #schedule .card.card-body {
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-      }
-      #schedule .list-group-item {
-        font-size: 1em;
-        background: transparent;
-        border: none;
-        padding-left: 0;
-        padding-right: 0;
-      }
-      @media (max-width: 991px) {
-        #schedule .card.card-body {
-          max-width: 100%;
-        }
-      }
     </style>
-
+    
     <!-- Add Bootstrap JS for collapse functionality if not already included -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
     <style>
@@ -1006,216 +605,271 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Organizers</h2>
-          <p>This workshop is organized by</p>
+          <!-- <p>This workshop is organized by</p> -->
         </div>
         
+        <!-- First Row - 6 Organizers -->
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/1.png" alt="Speaker 3" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://github.com/fuying-wang">Fuying Wang</a></h3>
-                <p>University of Hong Kong</p>
-                <div class="social">
-                  <a href="https://github.com/fuying-wang" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=pu8vv6IAAAAJ&hl=zh-TW" target = "_blank"> <i class="bi bi-google">  </i> </a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/2.png" alt="Speaker 2" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://shengliu66.github.io">Sheng Liu</a></h3>
-                <p>Stanford</p>
-                <div class="social">
-<a href="https://shengliu66.github.io" target = "_blank"> <i class="bi bi-globe">  </i> </a>
-<a href="https://scholar.google.es/citations?user=rzhzR-cAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">   </i> </a>
-<a href="https://x.com/ShengLiu_" target = "_blank"> <i class="bi bi-twitter"> </i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/3.png" alt="Speaker 2" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://profiles.stanford.edu/qingyue-wei">Qingyue Wei</a></h3>
-                <p>Stanford</p>
-                <div class="social">
-                  <a href="https://profiles.stanford.edu/qingyue-wei" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=2SNsz3YAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>         
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/organizers/4.png" alt="Speaker 1" class="img-fluid">
+              <img src="assets/img/organizers/yichengwu.jpg" alt="Yicheng Wu" class="img-fluid">
               <div class="details">
-                <h3><a href="https://ianyilin.github.io">Yi Lin</a></h3>
-                <p>Cornell</p>
+                <h3><a href="https://ycwu1997.github.io/eli/" target="_blank">Yicheng Wu</a></h3>
+                <p>Imperial College London</p>
                 <div class="social">
-                  <a href="https://ianyilin.github.io" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=JaSNrNEAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>
-                  <a href="https://www.linkedin.com/in/ianyilin/" target = "_blank"> <i class="bi bi-linkedin"></i> </a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/5.png" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://yulequan.github.io">Lequan Yu</a></h3>
-                <p>University of Hong Kong</p>
-                <div class="social">
-                  <a href="https://yulequan.github.io" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=llXf3wUAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>
-                  <a href="https://twitter.com/ylqzd2011" target = "_blank"> <i class="bi bi-twitter"> </i> </a>
-                  <a href="https://www.linkedin.com/in/lequan-yu-124811a2/" target = "_blank"> <i class="bi bi-linkedin"></i> </a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/6.png" alt="Speaker 3" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://yuyinzhou.github.io">Yuyin Zhou</a></h3>
-                <p>UCSC</p>
-                <div class="social">
-                  <a href="https://yuyinzhou.github.io" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=eiqVLC0AAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>
-                  <a href="https://x.com/intent/user?screen_name=yuyinzhou_cs" target = "_blank"> <i class="bi bi-twitter"> </i> </a>
-                  <a href="https://www.linkedin.com/in/yuyin-zhou-27223ab7/" target = "_blank"> <i class="bi bi-linkedin"></i> </a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/7.png" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="https://people.csail.mit.edu/yuzhe/">Yuzhe Yang</a></h3>
-                <p>UCLA</p>
-                <div class="social">
-                  <a href="https://people.csail.mit.edu/yuzhe/" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=0_bSbIoAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>
-                  <a href="https://x.com/yang_yuzhe" target = "_blank"> <i class="bi bi-twitter"> </i> </a>
-                  <a href="https://www.linkedin.com/in/yuzhe-yang-6809b2131/" target = "_blank"> <i class="bi bi-linkedin"></i> </a>                  
+                  <a href="https://ycwu1997.github.io/eli/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=_h1y48MAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-3">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150">
+              <img src="assets/img/organizers/yutonngxie.png" alt="Yutong Xie" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://mbzuai.ac.ae/study/faculty/yutong-xie/" target="_blank">Yutong Xie</a></h3>
+                <p>MBZUAI</p>
+                <div class="social">
+                  <a href="https://mbzuai.ac.ae/study/faculty/yutong-xie/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=ddDL9HMAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/organizers/xiaoqingguo.jfif" alt="Xiaoqing Guo" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://guo-xiaoqing.github.io/" target="_blank">Xiaoqing Guo</a></h3>
+                <p>Hong Kong Baptist University</p>
+                <div class="social">
+                  <a href="https://guo-xiaoqing.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com.hk/citations?user=fo3rmtwAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250">
+              <img src="assets/img/organizers/yunxiangli.jpg" alt="Yunxiang Li" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.yunxiangli.top/" target="_blank">Yunxiang Li</a></h3>
+                <p>UT Southwestern Medical Center</p>
+                <div class="social">
+                  <a href="https://www.yunxiangli.top/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=evbcKz8AAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/speakers/default_avatar.png" alt="Qiang Ma" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://scholar.google.com/citations?user=BNKFwqoAAAAJ&hl=en" target="_blank">Qiang Ma</a></h3>
+                <p>Imperial College London</p>
+                <div class="social">
+                  <a href="https://scholar.google.com/citations?user=BNKFwqoAAAAJ&hl=en" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=BNKFwqoAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="350">
+              <img src="assets/img/organizers/xinyuliu.jpg" alt="Xinyu Liu" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://xinyuliu-jeffrey.github.io/" target="_blank">Xinyu Liu</a></h3>
+                <p>Imperial College London</p>
+                <div class="social">
+                  <a href="https://xinyuliu-jeffrey.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=_J8-X7QAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row - 6 Organizers -->
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/organizers/8.png" alt="Speaker 1" class="img-fluid">
+              <img src="assets/img/organizers/zehuiliao.png" alt="Zehui Liao" class="img-fluid">
               <div class="details">
-                <h3><a href="https://angelicaiaviles.wordpress.com">Angelica Aviles-Rivero</a></h3>
-                <p>Tsinghua University</p>
+                <h3><a href="https://merrical.github.io/" target="_blank">Zehui Liao</a></h3>
+                <p>Northwestern Polytechnical University</p>
                 <div class="social">
-                  <a href="https://angelicaiaviles.wordpress.com" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=q5AA4lEAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>
-                  <a href="https://twitter.com/aviles_rivero" target = "_blank"> <i class="bi bi-twitter"> </i> </a>
-                  
+                  <a href="https://merrical.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=xdYS1e0AAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/9.png" alt="Speaker 4" class="img-fluid">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150">
+              <img src="assets/img/organizers/jienengchen.jpg" alt="Jieneng Chen" class="img-fluid">
               <div class="details">
-                <h3><a href="https://cse.hkust.edu.hk/~jhc/">Hao Chen</a></h3>
-                <p>HKUST</p>
+                <h3><a href="https://beckschen.github.io/" target="_blank">Jieneng Chen</a></h3>
+                <p>Johns Hopkins University</p>
                 <div class="social">
-                  <a href="https://cse.hkust.edu.hk/~jhc/" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=Z_t5DjwAAAAJ" target = "_blank"> <i class="bi bi-google">  </i> </a>          
+                  <a href="https://beckschen.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=yLYj88sAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/10.png" alt="Speaker 4" class="img-fluid">
+              <img src="assets/img/organizers/jieliu.jpg" alt="Jie Liu" class="img-fluid">
               <div class="details">
-                <h3><a href="https://www.professoren.tum.de/en/tum-junior-fellows/peng-tingying">Tingying Peng</a></h3>
-                <p>Helmholtz AI</p>
+                <h3><a href="https://scholar.google.com/citations?user=k05bkIEAAAAJ&hl=zh-CN" target="_blank">Jie Liu</a></h3>
+                <p>City University of Hong Kong</p>
                 <div class="social">
-                  <a href="https://www.professoren.tum.de/en/tum-junior-fellows/peng-tingying" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=jUiKc6QAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>          
+                  <a href="https://scholar.google.com/citations?user=k05bkIEAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=k05bkIEAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/11.png" alt="Speaker 4" class="img-fluid">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250">
+              <img src="assets/img/organizers/yejin.png" alt="Jin Ye" class="img-fluid">
               <div class="details">
-                <h3><a href="https://vivo.weill.cornell.edu/display/cwid-yip4002">Yifan Peng</a></h3>
-                <p>Weill Cornell Medicine</p>
+                <h3><a href="https://yejin0111.github.io/" target="_blank">Jin Ye</a></h3>
+                <p>Monash University</p>
                 <div class="social">
-                  <a href="https://vivo.weill.cornell.edu/display/cwid-yip4002" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=IwGLficAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>          
+                  <a href="https://yejin0111.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=UFBrJOAAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/organizers/12.png" alt="Speaker 4" class="img-fluid">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/speakers/default_avatar.png" alt="Tao Song" class="img-fluid">
               <div class="details">
-                <h3><a href="https://vita-group.github.io">Atlas Wang</a></h3>
-                <p>UT Austin</p>
+                <h3><a href="#" target="_blank">Tao Song</a></h3>
+                <p>Fudan University</p>
                 <div class="social">
-                  <a href="https://vita-group.github.io" target = "_blank"> <i class="bi bi-globe">   </i> </a>
-                  <a href="https://scholar.google.com/citations?user=pxFyKAIAAAAJ&hl=en" target = "_blank"> <i class="bi bi-google">  </i> </a>     
-                  <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fvita-group.github.io%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5EVITAGroupUT&region=follow_link&screen_name=VITAGroupUT" target = "_blank"> <i class="bi bi-twitter"> </i> </a>     
+                  <a href="#" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="#" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="350">
+              <img src="assets/img/organizers/zhonghuawu.jpg" alt="Zhonghua Wu" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://wu-zhonghua.github.io/" target="_blank">Zhonghua Wu</a></h3>
+                <p>SenseTime Research</p>
+                <div class="social">
+                  <a href="https://wu-zhonghua.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=wMDgLCYAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Row - 6 Organizers -->
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/organizers/Wenjia_Bai_2019_Crop.jpg" alt="Wenjia Bai" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.doc.ic.ac.uk/~wbai/web/" target="_blank">Wenjia Bai</a></h3>
+                <p>Imperial College London</p>
+                <div class="social">
+                  <a href="https://www.doc.ic.ac.uk/~wbai/web/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=IA1QFM4AAAAJ" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150">
+              <img src="assets/img/organizers/qingjiemeng.jpg" alt="Qingjie Meng" class="img-fluid">
+              <div class="details">
+                <h3><a href="#" target="_blank">Qingjie Meng</a></h3>
+                <p>University of Birmingham</p>
+                <div class="social">
+                  <a href="https://qmeng99.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=QckfNLYAAAAJ&hl=en&oi=ao" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/youzhang.jpg" alt="You Zhang" class="img-fluid">
+              <div class="details">
+                <h3><a href="" target="_blank">You Zhang</a></h3>
+                <p>UT Southwestern Medical Center</p>
+                <div class="social">
+                  <a href="https://sites.google.com/site/youzhangchn/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=VzdJe_4AAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250">
+              <img src="assets/img/organizers/zhaolin_chen.jpg" alt="Zhaolin Chen" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.drzchen.com/" target="_blank">Zhaolin Chen</a></h3>
+                <p>Monash University</p>
+                <div class="social">
+                  <a href="https://www.drzchen.com/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=wM9Y-I0AAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/organizers/weidongcai.jfif" alt="Weidong Cai" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://weidong-tom-cai.github.io/" target="_blank">Weidong Cai</a></h3>
+                <p>University of Sydney</p>
+                <div class="social">
+                  <a href="https://weidong-tom-cai.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=N8qTc2AAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="350">
+              <img src="assets/img/organizers/jianfeicai.jpg" alt="Jianfei Cai" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://jianfei-cai.github.io/" target="_blank">Jianfei Cai</a></h3>
+                <p>Monash University</p>
+                <div class="social">
+                  <a href="https://jianfei-cai.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?hl=en&user=N6czCoUAAAAJ" target="_blank"> <i class="bi bi-google"></i> </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      
-
-    <!-- </section>
-    <div class="supporting-section">
-          <h2 class="supporting-title">Supporting Organization</h2>
-          <div class="supporting-card">
-              <img src="assets/img/Miccai_official_logo.png" alt="Artificial Intelligence Journal Logo" class="supporting-logo">
-          </div>
-    </div> -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="sponsors" class="section-bg">
-
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-header">
-        <h2>Supporting Organization</h2>
-        <p>This workshop is sponsored by</p>
-      </div>
-
-      <!-- centering image -->
-      <div class="supporting-card">
-          <img src="assets/img/Miccai_official_logo.png" alt="Artificial Intelligence Journal Logo" class="supporting-logo">
-      </div>
-    </div>
-  </section>
+    </section>
 
   <!-- End Contact Section -->
 
@@ -1223,61 +877,6 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <!-- <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <img src="assets/img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-
     <div class="container">
       <div class="copyright">
         <!-- &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved -->
