@@ -63,6 +63,21 @@
     #speakers .container {
             max-width: 1340px;
         }
+    
+    /* CVPR Logo styling */
+    #header #logo {
+            display: block !important;
+            visibility: visible !important;
+        }
+    
+    #header #logo img {
+            display: block !important;
+            visibility: visible !important;
+            max-height: 50px !important;
+            height: auto !important;
+            width: auto !important;
+            opacity: 1 !important;
+        }
 
   </style>
 
@@ -81,10 +96,12 @@
   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
 
-      <div id="logo" class="me-auto">
+      <div id="logo" class="me-auto order-first" style="display: flex !important; align-items: center !important; z-index: 1000 !important; position: relative !important; padding: 5px !important;">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+        <a href="index.html" class="scrollto" style="display: flex !important; align-items: center !important;">
+          <img src="assets/img/cvpr-navbar-logo.svg" alt="CVPR Logo" title="CVPR" style="display:block !important; height: 50px !important; width: auto !important; min-width: 100px !important;">
+        </a>
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
@@ -668,7 +685,7 @@
 
           <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/img/speakers/default_avatar.png" alt="Qiang Ma" class="img-fluid">
+              <img src="assets/img/organizers/qiangma.jpg" alt="Qiang Ma" class="img-fluid">
               <div class="details">
                 <h3><a href="https://scholar.google.com/citations?user=BNKFwqoAAAAJ&hl=en" target="_blank">Qiang Ma</a></h3>
                 <p>Imperial College London</p>
@@ -844,8 +861,8 @@
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="assets/img/organizers/weidongcai.png" alt="Weidong(Tom) Cai" class="img-fluid">
               <div class="details">
-                <h3><a href="https://weidong-tom-cai.github.io/" target="_blank">Weidong(Tom) Cai</a></h3>
-                <p>University of Sydney</p>
+                <h3><a href="https://weidong-tom-cai.github.io/" target="_blank">Weidong (Tom) Cai</a></h3>
+                <p>The University of Sydney</p>
                 <div class="social">
                   <a href="https://weidong-tom-cai.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
                   <a href="https://scholar.google.com/citations?user=N8qTc2AAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
