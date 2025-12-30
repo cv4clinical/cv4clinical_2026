@@ -46,24 +46,46 @@
         }
     
     /* Resize all speaker and organizer profile images to 480x480 */
-    #speakers .speaker img,
-    #organizers .speaker img {
+    #speakers .speaker img {
             width: 480px;
             height: 480px;
             object-fit: cover;
             border-radius: 4px;
         }
     
+    /* Smaller height for organizer images, keep width at 100% */
+    #organizers .speaker img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    
+    /* Reduce padding and font sizes for organizer boxes */
+    #organizers .speaker {
+            margin-bottom: 20px;
+        }
+    
+    #organizers .speaker .details h3 {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+    
+    #organizers .speaker .details p {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+    
     /* Increase container width globally to reduce side margins */
     .container {
-            max-width: 1680px;
+            max-width: 1500px;
         }
     
     /* Keep speakers, about, and cfp sections with default width */
     #speakers .container,
     #about .container,
     #cfp .container {
-            max-width: 1340px;
+            max-width: 1350px;
         }
     
     /* CVPR Logo styling */
