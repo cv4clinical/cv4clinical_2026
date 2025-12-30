@@ -56,11 +56,13 @@
     
     /* Increase container width globally to reduce side margins */
     .container {
-            max-width: 1700px;
+            max-width: 1680px;
         }
     
-    /* Keep speakers section with default width */
-    #speakers .container {
+    /* Keep speakers, about, and cfp sections with default width */
+    #speakers .container,
+    #about .container,
+    #cfp .container {
             max-width: 1340px;
         }
     
@@ -78,6 +80,18 @@
             width: auto !important;
             opacity: 1 !important;
         }
+    
+    /* Increase font size for about, cfp, and schedule sections */
+    #about p,
+    #about li,
+    #cfp p,
+    #cfp li,
+    #cfp h3,
+    #schedule p,
+    #schedule li,
+    #schedule .schedule-item {
+            font-size: 18px;
+        }
 
   </style>
 
@@ -94,7 +108,7 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center ">
-    <div class="container-fluid container-xxl d-flex align-items-center">
+    <div class="container d-flex align-items-center">
 
       <div id="logo" class="me-auto order-first" style="display: flex !important; align-items: center !important; z-index: 1000 !important; position: relative !important; padding: 5px !important;">
         <!-- Uncomment below if you prefer to use a text logo -->
@@ -240,7 +254,7 @@
         <p>
           We welcome submissions of <strong>long papers (4-8 pages, excluding references)</strong> for oral or poster presentation at the workshop. Accepted papers will be published in the <strong>CVPR 2026 Workshop Proceedings</strong>.
         </p>
-        <h3>📌 Topics of Interest</h3>
+        <h2>📌 Topics of Interest</h2>
         <p>CV4Clinic 2026 focuses on bridging computer vision with real-world clinical translation. The workshop welcomes contributions in, but not limited to, the following areas:</p>
         <!-- <ul class="fa-ul" style="line-height: 1.8; font-size: 1.05em;">
           <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🩺 Clinical deployment and translation:</strong> Model effectiveness, reliability, and reproducibility in real-world settings</li>
