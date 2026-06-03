@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CV4Clinic 2026: Computer Vision for Real-world Clinical Translation</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .supporting-section {
+            text-align: center;
+            margin-top: 60px;
+        }
+    .supporting-title {
+            font-size: 1.8rem;
+            color: #495057;
+            margin-bottom: 30px;
+        }
+    .supporting-logo {
+            max-width: 400px;
+            max-height: 200px;
+            margin-bottom: 15px;
+            object-fit: contain;
+        }
+    .supporting-card {
+            text-align: center;
+        }
+    
+    /* Resize all speaker and organizer profile images to 480x480 */
+    #speakers .speaker img {
+            width: 480px;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    
+    /* Smaller height for organizer images, keep width at 100% */
+    #organizers .speaker img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    
+    /* Reduce padding and font sizes for organizer boxes */
+    #organizers .speaker {
+            margin-bottom: 20px;
+        }
+    
+    #organizers .speaker .details h3 {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+    
+    #organizers .speaker .details p {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+    #organizers .organizer-group {
+            margin-bottom: 28px;
+        }
+
+    #organizers .chair-card {
+            margin-bottom: 12px;
+        }
+
+    #organizers .chair-card .speaker {
+            margin-bottom: 10px;
+        }
+
+    #organizers .chair-caption {
+            text-align: center;
+            color: #152238;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+    #organizers .chair-caption .chair-role {
+            color: #0e1b4d;
+            font-weight: 700;
+        }
+    
+    /* Increase container width globally to reduce side margins */
+    .container {
+            max-width: 1500px;
+        }
+    
+    /* Keep speakers, about, and cfp sections with default width */
+    #speakers .container,
+    #about .container,
+    #cfp .container {
+            max-width: 1350px;
+        }
+    
+    /* CVPR Logo styling */
+    #header #logo {
+            display: block !important;
+            visibility: visible !important;
+        }
+    
+    #header #logo img {
+            display: block !important;
+            visibility: visible !important;
+            max-height: 50px !important;
+            height: auto !important;
+            width: auto !important;
+            opacity: 1 !important;
+        }
+    
+    /* Increase font size for about, cfp, and schedule sections */
+    #about p,
+    #about li,
+    #cfp p,
+    #cfp li,
+    #cfp h3,
+    #schedule p,
+    #schedule li,
+    #schedule .schedule-item {
+            font-size: 18px;
+        }
+
+  </style>
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container d-flex align-items-center">
+
+      <div id="logo" class="me-auto order-first" style="display: flex !important; align-items: center !important; z-index: 1000 !important; position: relative !important; padding: 5px !important;">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto" style="display: flex !important; align-items: center !important;">
+          <img src="assets/img/cvpr-navbar-logo.svg" alt="CVPR Logo" title="CVPR" style="display:block !important; height: 50px !important; width: auto !important; min-width: 100px !important;">
+        </a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#cfp">Call for Papers</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#resources">Resources</a></li> -->
+          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-4 pb-0">Bridging <span style="color: yellow;">AI</span> and <span style="color: orange;">Medical Reality</span> :<br> Computer Vision for Real-world Clinical Translation <br>(<span style="color: cyan;">CVPR CV4Clinic 2026</span>)</h1>
+      <p class="mb-2 pb-0" style="font-size:1.9rem;">Date: 1:00 PM to 6:00 PM, June 4th, 2026</p>
+      <p class="mb-4 pb-0" style="font-size:1.9rem;"><strong>Location:</strong> Room Mile High 1AB, Denver Colorado Convention Center, United States</p>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>About The Workshop</h2>
+            <p style="font-size: 16px;">The CVPR CV4Clinic 2026 workshop aims to bridge advanced computer vision techniques and the complex realities of clinical applications. While CVPR continues to drive progress in imaging, understanding and action, this workshop explores how such advances can translate into real-world medical impacts. By convening experts from academia, industry, and healthcare, CV4Clinic 2026 will focus on key issues of model effectiveness, reliability, and reproducibility in clinical deployment; critically examine the opportunities and challenges of emerging techniques such as foundation and generative models; and explore future directions for socially meaningful and clinically grounded medical AI.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Call for Papers Section ======= -->
+    <section id="cfp" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+        <h2>Call for Papers</h2>
+        </div>
+        <p>
+          We welcome submissions of <strong>long papers (4-8 pages, excluding references)</strong> for oral or poster presentation at the workshop. Accepted papers will be published in the <strong>CVPR 2026 Workshop Proceedings</strong>.
+        </p>
+        <h2><b style="color: #e74c3c;">News</b></h2>
+        <ul class="fa-ul" style="line-height: 1.8; font-size: 1.05em;">
+          <li><strong><b style="color: #e74c3c;">Posters</strong></b>: All workshop posters will be displayed in Exhibit Hall A. The assigned poster board numbers are 38–52, and each board will accommodate two posters. If no specific allocation is provided on site, please refer to <a href="https://drive.google.com/file/d/1wIH3VR7DT1RY5f71s22aVMC5CyW3Ba3X/view">this allocation information</a>.</li>
+          <li><strong><b style="color: #e74c3c;">Event Schedule</strong></b>: The workshop will be held in Room Mile High 1AB from 1:00 PM to 6:00 PM on June 4, 2026 (Denver local time).</li>
+          <li><strong><b style="color: #e74c3c;">Camera-Ready Submission</strong></b>: Camera-Ready Submission Instructions have been shared with authors with accepted papers. Please note that the confirmed submission deadline is Friday, April 10th, 2026 @ 11:59 Pacific Time.</li>
+          <li><strong><b style="color: #e74c3c;">Release</strong></b>: The paper reviews and decisions have been released to authors. Thanks for your patience and cooperation.</li>
+          <li><strong><b style="color: #e74c3c;">Final Decision</strong></b>: We are currently finalizing the paper decisions and will notify authors of the final decision by 11:59 PM, March 25, 2026 (AoE Time).</li>
+          <li><strong><b style="color: #e74c3c;">Submission Extension</strong></b>: As requested, we have extended the submission deadline by one week to 11:59 PM, March 9, 2026 (AoE Time).</li>
+          <li><strong><b style="color: #e74c3c;">Supplementary Material</strong></b>: We mainly follow the CVPR 2026 submission guidelines. The supplementary material may be included after the references within the main PDF.</li>
+        </ul>
+        <h2>📌 Topics of Interest</h2>
+        <p>CV4Clinic 2026 focuses on bridging computer vision with real-world clinical translation. The workshop welcomes contributions in, but not limited to, the following areas:</p>
+        <ul class="fa-ul" style="line-height: 1.8; font-size: 1.05em;">
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🎯 Lesion and Tumor Understanding:</strong> Robust segmentation under heterogeneous conditions, multi-rater variability modeling, adaptive delineation</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>⏱️ Temporal and Longitudinal Analysis:</strong> Disease progression modeling, temporal imaging data learning, short- to long-term outcome analysis</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🤝 Human-AI Collaboration:</strong> Interactive and trustworthy systems, human-in-the-loop learning, explainability, interfaces, clinical workflow integration</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>📊 Benchmarking, and Deployment:</strong> Clinical evaluation protocols, domain adaptation, robustness, deployment case studies, regulatory readiness</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>📝 Generative Modeling:</strong> Data synthesis, modality translation, multimodal clinical data, cross-modal alignments, digital twins, and personalization</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>💬 Vision & Language in Medicine:</strong> Medical reports in clinical flows, LLM-based medical applications, hallucination and interpretability</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>🔥 Foundation Models in Medicine:</strong> SAM/DINO-based applications, world model state transfer, continual learning, and active learning</li>
+          <li><span class="fa-li"><i class="fa fa-check text-success"></i></span><strong>📐 Medical 3D Learning:</strong> 3D understanding, real-time motion estimation and tracking, population-level statistical shape modelling</li>
+        </ul>
+        <p style="font-style: italic;">
+          By combining these themes, CV4Clinic 2026 aims to foster interdisciplinary dialogue and identify research directions that will shape the future of clinically reliable, socially meaningful, and ethically grounded medical AI.
+        </p>
+        <p>
+          <strong>Review & Selection:</strong> All submissions will be evaluated by the program committee based on relevance and quality. <strong>Oral and poster</strong> presentations will be selected accordingly.
+        </p>
+        
+        <h2>🏆 Awards</h2>
+        <ul class="fa-ul" style="line-height: 1.8; font-size: 1.05em;">
+          <li><strong>🥇 Best Paper Award</strong> (Two Awards Available, Bonus: 500 USD each)</li>
+          <li><strong>🥇 Best Presentation Award</strong> (Two Awards Available, Bonus: 300 USD each)</li>
+        </ul>
+        <h2>📅 Important Dates</h2>
+        <ul class="fa-ul" style="line-height: 1.8; font-size: 1.05em;">
+          <li><span class="fa-li"><i class="fa fa-calendar-check text-success"></i></span><strong>Submission Opens:</strong> <b>January 24, 2026</b></li>
+          <li><span class="fa-li"><i class="fa fa-calendar-times text-danger"></i></span><strong>Submission Deadline: </strong> <del><b style="color: #e74c3c;">March 02, 2026</b></del> → <b style="color: #e74c3c;">March 09, 2026</b></li>
+          <li><span class="fa-li"><i class="fa fa-envelope-open-text text-info"></i></span><strong>Notification of Acceptance:</strong> <del><b style="color: #e74c3c;">March 20, 2026</b></del> → <b style="color: #e74c3c;">March 25, 2026</b></li>
+          <li><span class="fa-li"><i class="fa fa-upload text-primary"></i></span><strong>Camera-Ready Deadline:</strong> <del><b style="color: #e74c3c;">April 08, 2026</b></del> → <b style="color: #e74c3c;">April 10, 2026</b> (11:59 Pacific Time)</li>
+        </ul>
+        <p>🕓 All times are in <strong>Anywhere on Earth (AoE)</strong>, if not specified.</p>
+        <p>
+          All papers can be submitted through the OpenReview platform. Please visit the <strong><a href="https://openreview.net/group?id=thecvf.com/CVPR/2026/Workshop/CV4Clinical" target="_blank">SUBMISSION</a></strong> venue.
+        </p>
+
+        <h2>📄 Format</h2>
+        <p>
+          Please use the official <strong><a href="https://github.com/cvpr-org/author-kit/archive/refs/tags/CVPR2026-v1(latex).zip" target="_blank">CVPR 2026 Submission Template</a></strong> to prepare your manuscript.
+        </p>
+        <p>
+          Submissions must be in <strong>PDF format</strong> and <strong>anonymous</strong>. By submitting a paper, at least one author agrees to present the work if accepted.
+        </p>
+        <h2>🧑‍⚖️ Reviewer Recruitment</h2>
+        <p>
+          We sincerely thank our 40 reviewers for their dedication and effort in delivering high-quality and timely reviews for our workshop.
+          <del>We are actively seeking reviewers to support the community. If you're interested, please contact us at cv4clinical@gmail.com.</del>
+        </p>
+        <h2>💰 Sponsorship</h2>
+        <p>
+          We would also like to acknowledge and thank our sponsor, Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), for their generous support.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Invited Speakers</h2>
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/speakers/bernhardkainz.png" alt="Prof. Bernhard Kainz" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://bernhard-kainz.com/" target="_blank">Prof. Bernhard Kainz</a></h3>
+                <p>FAU Erlangen Nürnberg and Imperial College London</p>
+                <div class="social">
+                  <a href="https://bernhard-kainz.com/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.co.uk/citations?user=Igxq-YEAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/lvle.jpg" alt="Dr. Le Lv" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://lelu007.github.io/" target="_blank">Dr. Le Lv</a></h3>
+                <p>Ant Group</p>
+                <div class="social">
+                  <a href="https://lelu007.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=kZn0f6gAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/speakers/siqiliu.png" alt="Dr. Siqi Liu" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.linkedin.com/in/siqi-liu-6223b455/" target="_blank">Dr. Siqi Liu</a></h3>
+                <p>Tempus AI</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/siqi-liu-6223b455/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=ADyo_cAAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/youzhang.png" alt="Dr. You Zhang" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://sites.google.com/site/youzhangchn" target="_blank">Dr. You Zhang</a></h3>
+                <p>UT Southwestern Medical Center</p>
+                <div class="social">
+                  <a href="https://sites.google.com/site/youzhangchn" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=VzdJe_4AAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Speakers Section -->
+
+    <!-- ======= Call for papers ======= -->
+    <!-- End Hotels Section -->
+    <!-- ======= Schedule Section ======= -->
+    <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+          <p>CVPR CV4Clinic 2026 Workshop Program</p>
+        </div>
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div role="tabpanel" class="col-lg-11 col-md-12 tab-pane fade show active" id="day-1">
+            
+            <!-- Welcome and Introduction -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>1.00 PM - 1:20 PM</time>
+              </div>
+              <div class="col-md-10">
+                <h4>Welcome and Introduction</h4>
+                <p>Opening by the organizers and introduction to the theme and objectives of CVPR CV4Clinic 2026</p>
+              </div>
+            </div>
+
+            <!-- Keynote-Academia-1 -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>1:20 PM - 2:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="speaker me-3">
+                    <img src="assets/img/speakers/bernhardkainz.png" alt="Prof. Bernhard Kainz" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Keynote: From Concept to Clinic</h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Prof. Bernhard Kainz</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Keynote-Industry-1 -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>2:00 PM - 2:40 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="speaker me-3">
+                    <img src="assets/img/speakers/lvle.jpg" alt="Dr. Le Lv" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Keynote: Cross-modality and Multi-modality Learning for Medical Imaging and Clinical Applications </h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Dr. Le Lv</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poster and Coffee Break -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>2:40 PM - 3:20 PM</time>
+              </div>
+              <div class="col-md-10">
+                <h4>Poster and Coffee Break</h4>
+                <p>Poster presentation</p>
+              </div>
+            </div>
+
+            <!-- Keynote-Industry-2 -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>3:20 PM - 4:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="speaker me-3">
+                    <img src="assets/img/speakers/siqiliu.png" alt="Dr. Siqi Liu" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Keynote: Foundation Models for Cancer Precision Medicine: From Pathology Tiles to Whole-patient Trajectories</h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Dr. Siqi Liu</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Keynote-Healthcare-1 -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>4:00 PM - 4:40 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="speaker me-3">
+                    <img src="assets/img/speakers/youzhang.png" alt="Dr. You Zhang" style="width:60px; height:60px; object-fit:cover; border-radius:50%;">
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Keynote: Learning from Limited Data: Self-Supervised Methods for Time-Resolved Tomographic Imaging</h4>
+                    <h5 class="mb-0" style="font-size:1.1em;">Dr. You Zhang</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Oral Sessions -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>4:40 PM - 5:40 PM</time>
+              </div>
+              <div class="col-md-10">
+                <h4>Oral Session</h4>
+                <p>4:40 PM - 5:00 PM: "Generative Domain-Invariant Learning for Robust Medical Image Segmentation under Clinical Heterogeneity"</p>
+                <p>5:00 PM - 5:20 PM: "How Useful Are Vision Foundation Model Features for Out-of-the-Box Disease Progression Prediction?"</p>
+                <p>5:20 PM - 5:40 PM: "RobustMedSAM: Degradation-Resilient Medical Image Segmentation via Robust Foundation Model Adaptation"</p>
+              </div>
+            </div>
+
+            <!-- Summary and Outlook -->
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>5:40 PM - 6:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <h4>Summary and Outlook</h4>
+                <p>Closing remarks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      #schedule .tab-content {
+        max-width: 100%;
+      }
+    </style>
+    
+    <!-- Add Bootstrap JS for collapse functionality if not already included -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <style>
+      #schedule .schedule-item .card.card-body {
+        font-size: 1em;
+        border-left: 4px solid #007bff;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      }
+      #schedule .btn-outline-primary.btn-sm {
+        padding: 0.15rem 0.7rem;
+        font-size: 0.95em;
+        border-radius: 1rem;
+      }
+      #schedule .speaker img {
+        border: 2px solid #eaeaea;
+        background: #fff;
+      }
+    </style>
+
+    </section>
+    
+    <section id="organizers">
+      <div class="container" data-aos="fade-up">
+        <div class="organizer-group">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 chair-card">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/organizers/qingjiemeng.jpg" alt="Qingjie Meng" class="img-fluid">
+                <div class="details">
+                  <h3><a href="https://qmeng99.github.io/" target="_blank">Qingjie Meng</a></h3>
+                  <p>University of Birmingham</p>
+                  <div class="social">
+                    <a href="https://qmeng99.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                    <a href="https://scholar.google.com/citations?user=QckfNLYAAAAJ&hl=en&oi=ao" target="_blank"> <i class="bi bi-google"></i> </a>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-caption">
+                <div class="chair-role">Main Chair</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 chair-card">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/chair/zihao_tang.png" alt="Zihao Tang" class="img-fluid">
+                <div class="details">
+                  <h3><a href="https://scholar.google.com/citations?user=JAfD8moAAAAJ&hl=zh-CN" target="_blank">Zihao Tang</a></h3>
+                  <p>University of Sydney</p>
+                  <div class="social">
+                    <a href="https://scholar.google.com/citations?user=JAfD8moAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-caption">
+                <div class="chair-role">Online Chair</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 chair-card">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/chair/kai_wang.png" alt="Kai Wang" class="img-fluid">
+                <div class="details">
+                  <h3><a href="https://scholar.google.com/citations?user=lawzt94AAAAJ&hl=zh-CN" target="_blank">Kai Wang</a></h3>
+                  <p>CU School of Medicine</p>
+                  <div class="social">
+                    <a href="https://scholar.google.com/citations?user=lawzt94AAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-caption">
+                <div class="chair-role">Onsite Chair</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-header">
+          <h2>Organizers</h2>
+          <!-- <p>This workshop is organized by</p> -->
+        </div>
+        
+        <!-- First Row - 6 Organizers -->
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/organizers/yichengwu.jpg" alt="Yicheng Wu" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://ycwu1997.github.io/eli/" target="_blank">Yicheng Wu</a></h3>
+                <p>Imperial College London</p>
+                <div class="social">
+                  <a href="https://ycwu1997.github.io/eli/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=_h1y48MAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150">
+              <img src="assets/img/organizers/yutonngxie.png" alt="Yutong Xie" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://mbzuai.ac.ae/study/faculty/yutong-xie/" target="_blank">Yutong Xie</a></h3>
+                <p>MBZUAI</p>
+                <div class="social">
+                  <a href="https://mbzuai.ac.ae/study/faculty/yutong-xie/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=ddDL9HMAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/organizers/xiaoqingguo.png" alt="Xiaoqing Guo" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://guo-xiaoqing.github.io/" target="_blank">Xiaoqing Guo</a></h3>
+                <p>Hong Kong Baptist University</p>
+                <div class="social">
+                  <a href="https://guo-xiaoqing.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com.hk/citations?user=fo3rmtwAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250">
+              <img src="assets/img/organizers/yunxiangli.jpg" alt="Yunxiang Li" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.yunxiangli.top/" target="_blank">Yunxiang Li</a></h3>
+                <p>UT Southwestern Medical Center</p>
+                <div class="social">
+                  <a href="https://www.yunxiangli.top/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=evbcKz8AAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/organizers/qiangma.jpg" alt="Qiang Ma" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://scholar.google.com/citations?user=BNKFwqoAAAAJ&hl=en" target="_blank">Qiang Ma</a></h3>
+                <p>Imperial College London</p>
+                <div class="social">
+                  <a href="https://scholar.google.com/citations?user=BNKFwqoAAAAJ&hl=en" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=BNKFwqoAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="350">
+              <img src="assets/img/organizers/xinyuliu.jpg" alt="Xinyu Liu" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://xinyuliu-jeffrey.github.io/" target="_blank">Xinyu Liu</a></h3>
+                <p>Imperial College London</p>
+                <div class="social">
+                  <a href="https://xinyuliu-jeffrey.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=_J8-X7QAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row - 6 Organizers -->
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/organizers/zehuiliao.png" alt="Zehui Liao" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://merrical.github.io/" target="_blank">Zehui Liao</a></h3>
+                <p>Monash University</p>
+                <div class="social">
+                  <a href="https://merrical.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=xdYS1e0AAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150">
+              <img src="assets/img/organizers/jienengchen.jpg" alt="Jieneng Chen" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://beckschen.github.io/" target="_blank">Jieneng Chen</a></h3>
+                <p>Johns Hopkins University</p>
+                <div class="social">
+                  <a href="https://beckschen.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=yLYj88sAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/organizers/jieliu.jpg" alt="Jie Liu" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://scholar.google.com/citations?user=k05bkIEAAAAJ&hl=zh-CN" target="_blank">Jie Liu</a></h3>
+                <p>City University of Hong Kong</p>
+                <div class="social">
+                  <a href="https://scholar.google.com/citations?user=k05bkIEAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=k05bkIEAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250">
+              <img src="assets/img/organizers/yejin.png" alt="Jin Ye" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://yejin0111.github.io/" target="_blank">Jin Ye</a></h3>
+                <p>Monash University</p>
+                <div class="social">
+                  <a href="https://yejin0111.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=UFBrJOAAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/organizers/taosong.jpg" alt="Tao Song" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://scholar.google.com/citations?user=Xzk31ssAAAAJ&hl=zh-CN" target="_blank">Tao Song</a></h3>
+                <p>Fudan University</p>
+                <div class="social">
+                  <a href="https://scholar.google.com/citations?user=Xzk31ssAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=Xzk31ssAAAAJ&hl=zh-CN" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="350">
+              <img src="assets/img/organizers/zhonghuawu.jpg" alt="Zhonghua Wu" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://wu-zhonghua.github.io/" target="_blank">Zhonghua Wu</a></h3>
+                <p>Nanyang Technological University</p>
+                <div class="social">
+                  <a href="https://wu-zhonghua.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=wMDgLCYAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Row - 6 Organizers -->
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/organizers/wenjiabai.png" alt="Wenjia Bai" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.doc.ic.ac.uk/~wbai/web/" target="_blank">Wenjia Bai</a></h3>
+                <p>Imperial College London</p>
+                <div class="social">
+                  <a href="https://www.doc.ic.ac.uk/~wbai/web/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=IA1QFM4AAAAJ" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150">
+              <img src="assets/img/organizers/qingjiemeng.jpg" alt="Qingjie Meng" class="img-fluid">
+              <div class="details">
+                <h3><a href="#" target="_blank">Qingjie Meng</a></h3>
+                <p>University of Birmingham</p>
+                <div class="social">
+                  <a href="https://qmeng99.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=QckfNLYAAAAJ&hl=en&oi=ao" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/organizers/youzhang.png" alt="You Zhang" class="img-fluid">
+              <div class="details">
+                <h3><a href="" target="_blank">You Zhang</a></h3>
+                <p>UT Southwestern Medical Center</p>
+                <div class="social">
+                  <a href="https://sites.google.com/site/youzhangchn/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=VzdJe_4AAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250">
+              <img src="assets/img/organizers/zhaolin_chen.jpg" alt="Zhaolin Chen" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.drzchen.com/" target="_blank">Zhaolin Chen</a></h3>
+                <p>Monash University</p>
+                <div class="social">
+                  <a href="https://www.drzchen.com/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=wM9Y-I0AAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/organizers/weidongcai.png" alt="Weidong(Tom) Cai" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://weidong-tom-cai.github.io/" target="_blank">Weidong (Tom) Cai</a></h3>
+                <p>The University of Sydney</p>
+                <div class="social">
+                  <a href="https://weidong-tom-cai.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?user=N8qTc2AAAAAJ&hl=en" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="350">
+              <img src="assets/img/organizers/jianfeicai.jpg" alt="Jianfei Cai" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://jianfei-cai.github.io/" target="_blank">Jianfei Cai</a></h3>
+                <p>Monash University</p>
+                <div class="social">
+                  <a href="https://jianfei-cai.github.io/" target="_blank"> <i class="bi bi-globe"></i> </a>
+                  <a href="https://scholar.google.com/citations?hl=en&user=N6czCoUAAAAJ" target="_blank"> <i class="bi bi-google"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        <!-- &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved -->
+      </div>
+      <div class="credits">
+        Template designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
